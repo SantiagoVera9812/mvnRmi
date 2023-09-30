@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>DistribuidosTaller1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties> 
+
+    <build>
+    <plugins>
+        
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>3.2.0</version>
+            <executions>
+                <execution>
+                    <id>add-source-main-servidor</id>
+                    <goals>
+                        <goal>add-source</goal>
+                    </goals>
+                    <configuration>
+                        <sources>
+                            <source>src/main/java/org/example</source>
+                        </sources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>3.2.0</version>
+            <executions>
+                <execution>
+                    <id>add-source-main-cliente</id>
+                    <goals>
+                        <goal>add-source</goal>
+                    </goals>
+                    <configuration>
+                        <sources>
+                            <source>src/main/java/org/example</source>
+                        </sources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>3.2.0</version>
+            <executions>
+                <execution>
+                    <id>add-source-main-servidorop1</id>
+                    <goals>
+                        <goal>add-source</goal>
+                    </goals>
+                    <configuration>
+                        <sources>
+                            <source>src/main/java/org/example</source>
+                        </sources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin> 
+
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>3.2.0</version>
+            <executions>
+                <execution>
+                    <id>add-source-main-servidorop2</id>
+                    <goals>
+                        <goal>add-source</goal>
+                    </goals>
+                    <configuration>
+                        <sources>
+                            <source>src/main/java/org/example</source>
+                        </sources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <id>run-main-servidor</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>org.example.MainServidor</mainClass>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <id>run-main-cliente</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>org.example.MainCliente</mainClass>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin> 
+
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <id>run-main-servidorop1</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>org.example.MainServidorOp1</mainClass>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <id>run-main-servidorop2</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>org.example.MainServidorOp2</mainClass>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+</project>
